@@ -158,7 +158,7 @@ console.log(Kofi.location);
 console.log(Kofi.specialty);
 console.log(Kofi.favLanguage);
 console.log(Kofi.catchPhrase);
-console.log(Kofi.standUp("Function Declaration"));
+console.log(Kofi.demo("Function Declaration"));
 console.log(Kofi.grade(Chris, "Functions"));
 
 ///////////////////////////////////////////////////////////////////
@@ -183,5 +183,5 @@ console.log(Ant.favLanguage);
 console.log(Ant.catchPhrase);
 console.log(Ant.gradClassName);
 console.log(Ant.favInstructor);
-console.log(Ant.demo("11222"));
+console.log(Ant.standUp("11222"));
 console.log(Ant.debugsCode(Chris, "Functions"));
