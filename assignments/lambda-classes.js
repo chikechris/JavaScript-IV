@@ -14,7 +14,7 @@ class Person {
     this.location = PersonProperty.location;
   }
   speak() {
-    return `Hello my name is ${this.name}, I am from${this.location}`;
+    return `Hello my name is ${this.name}, I am from ${this.location}`;
   }
 }
 
@@ -62,7 +62,7 @@ class Instructor extends Person {
     * **/
 
 class Student extends Person {
-  contructor(StudentProperty) {
+  constructor(StudentProperty) {
     super(StudentProperty);
     this.previousBackground = StudentProperty.previousBackground;
     this.className = StudentProperty.className;
@@ -116,5 +116,5 @@ const Mandy = new Person({
 
 console.log(Mandy.name);
 console.log(Mandy.age);
-console.log(Mandy.locaton);
+console.log(Mandy.location);
 console.log(Mandy.speak());
