@@ -104,3 +104,17 @@ class PM extends Instructor {
     return `${(this, name)} debugs ${student.name} 's code on ${subject}`;
   }
 }
+
+/**Tests */
+
+//Person Test
+const Mandy = new Person({
+  name: "Mandy Cruz",
+  age: 40,
+  location: "Atlanta, Georgia"
+});
+
+console.log(Mandy.name);
+console.log(Mandy.age);
+console.log(Mandy.locaton);
+console.log(Mandy.speak());
