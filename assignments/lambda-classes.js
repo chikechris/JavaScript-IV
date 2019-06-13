@@ -74,7 +74,7 @@ class Student extends Person {
   PRAssignment(subject) {
     return `${this.name} has submitted a PR for ${subject};`;
   }
-  sprintChallenge() {
+  sprintChallenge(subject) {
     return `${this.name} has begun sprint challenge on ${subject};`;
   }
 }
@@ -101,7 +101,7 @@ class PM extends Instructor {
     return `${this.name} announces to ${channel}, @channel standy times!​​​​​`;
   }
   debugsCode(Student, subject) {
-    return `${(this, name)} debugs ${student.name} 's code on ${subject}`;
+    return `${this.name} debugs ${Student.name} 's code on ${subject}`;
   }
 }
 
@@ -120,6 +120,27 @@ console.log(Mandy.location);
 console.log(Mandy.speak());
 
 ////////////////////////////////////////////////////////
+//Student Test
+
+const Chris = new Student({
+  name: "Chris Baron",
+  age: 30,
+  location: "Macon, Georgia",
+  previousBackground: "Industrial Engineering",
+  className: "CS105",
+  favSubjects: "Mathematics and Physics"
+});
+
+console.log(Chris.name);
+console.log(Chris.age);
+console.log(Chris.location);
+console.log(Chris.previousBackground);
+console.log(Chris.className);
+console.log(Chris.favSubjects);
+console.log(Chris.listsSubjects());
+console.log(Chris.PRAssignment("Flex-Box Project"));
+console.log(Chris.sprintChallenge("React"));
+
 //Instructor Test
 
 const Kofi = new Instructor({
@@ -137,5 +158,30 @@ console.log(Kofi.location);
 console.log(Kofi.specialty);
 console.log(Kofi.favLanguage);
 console.log(Kofi.catchPhrase);
-console.log(Kofi.demo("Function Declaration"));
+console.log(Kofi.standUp("Function Declaration"));
 console.log(Kofi.grade(Chris, "Functions"));
+
+///////////////////////////////////////////////////////////////////
+//Project Manager Test
+
+const Ant = new PM({
+  name: "Anthony Gibson",
+  age: 36,
+  location: "Albany, Georgia",
+  specialty: "Word Press",
+  favLanguage: "CSS",
+  catchPhrase: "Life is a stage",
+  gradClassName: "CS200",
+  favInstructor: "Kofi Marcell"
+});
+
+console.log(Ant.name);
+console.log(Ant.age);
+console.log(Ant.location);
+console.log(Ant.specialty);
+console.log(Ant.favLanguage);
+console.log(Ant.catchPhrase);
+console.log(Ant.gradClassName);
+console.log(Ant.favInstructor);
+console.log(Ant.demo("11222"));
+console.log(Ant.debugsCode(Chris, "Functions"));
