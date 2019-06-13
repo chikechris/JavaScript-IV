@@ -118,3 +118,24 @@ console.log(Mandy.name);
 console.log(Mandy.age);
 console.log(Mandy.location);
 console.log(Mandy.speak());
+
+////////////////////////////////////////////////////////
+//Instructor Test
+
+const Kofi = new Instructor({
+  name: "Kofi Marcell",
+  age: 50,
+  location: "Athens, Georgia",
+  specialty: "Web Development",
+  favLanguage: "JavaScript",
+  catchPhrase: "Live and Let Live"
+});
+
+console.log(Kofi.name);
+console.log(Kofi.age);
+console.log(Kofi.location);
+console.log(Kofi.specialty);
+console.log(Kofi.favLanguage);
+console.log(Kofi.catchPhrase);
+console.log(Kofi.demo("Function Declaration"));
+console.log(Kofi.grade(Chris, "Functions"));
